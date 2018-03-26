@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	.btn{display: block; float: left; color: #fff; width: 130px; border-radius: 10px; font-size: 22px; line-height: 64px; text-align: center;text-decoration: none; margin: 0 200px 20px 0;}
+	.black{background: #000;}
+     a.black:hover{background: #fff; border:3px solid #000; color: #000;}
+	.gold{background: #cfb358;}
+     a.gold:hover{background: #fff; border:3px solid #cfb358; color: #cfb358;}
+	.blue{background: #82cafa;}
+     a.blue:hover{background: #fff; border:3px solid #82cafa; color: #82cafa;}
+	.rose{background: #debdc2;}
+     a.rose:hover{background: #fff; border:3px solid #debdc2; color: #debdc2;}
+
+	</style>
+</head>
+<body>
+<a href="#" class="btn black" onclick="displayBlackColor();">Black</a>
+<a href="#" class="btn gold" onclick="displayGoldColor();">Gold</a>
+<a href="#" class="btn blue" onclick="displayBlueColor();">Blue</a>
+<a href="#" class="btn rose" onclick="displayRoseColor();">Rose Gold</a>
+
+<img src="black.jpeg" id="blackPhone" style="display: none;">
+<img src="gold.jpeg" id="goldPhone" style="display: none;">
+<img src="blue.jpeg" id="bluePhone" style="display: none;">
+<img src="rose-gold.jpeg" id="rosePhone" style="display: none;">
+
+<script>
+	function displayBlackColor(){
+        document.getElementById('blackPhone').style.display="block";
+        setTimeout("document.getElementById('blackPhone').style.display='none';", 1000);
+    }
+    function displayGoldColor(){
+        document.getElementById('goldPhone').style.display="block";
+        setTimeout("document.getElementById('goldPhone').style.display='none';", 1000);
+    }
+    function displayBlueColor(){
+        document.getElementById('bluePhone').style.display="block";
+        setTimeout("document.getElementById('bluePhone').style.display='none';", 1000);
+    }
+    function displayRoseColor(){
+        document.getElementById('rosePhone').style.display="block";
+        setTimeout("document.getElementById('rosePhone').style.display='none';", 1000);
+    }
+</script>
+</body>
+</html>
